@@ -1,0 +1,22 @@
+Processeur :
+    Modèle : Intel Core i5-4200U
+    Fréquence : 2,3GHz
+Mémoire :
+    Taille : 6 Go
+Système d'exploitation :
+    Nom : Windows
+    Version : 10.0.19041
+Stockage :
+    Partition 1 :
+        Nom : System (C:)
+        Espace total : 430Go
+        Espace libre : 361Go
+        Type : NFTS
+    Partition 2 :
+        Nom : Data (D:)
+        Espace total : 499Go
+        Espace libre : 499Go
+        Type : NFTS
+Réseau :
+    Adresse IP externe : 77.196.152.4
+    Adresse IP Locale  : 192.168.1.96

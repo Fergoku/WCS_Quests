@@ -1,0 +1,48 @@
+# My computer
+
+## Processor
+
+* Model
+: Intel Core i5-4200U
+* Frequency
+: 2,3 Ghz
+
+## Memory
+
+* Size
+: 6 Go
+
+## Operating system
+
+* Name
+: Windows
+* Version
+: 10.0.19041
+
+## Storage
+
+* Partition 1 :
+  * Name
+: System (C:)
+  * Total space
+: 430Go
+  * Free space
+: 361Go
+  * Type
+: NFTS
+* Partition 2 :
+  * Name
+: Data (D:)
+  * Total space
+: 499Go
+  * Free space
+: 499Go
+  * Type
+: NFTS
+
+## Network
+
+* External IP address
+: 77.196.152.4
+* Local IP address
+ : 192.168.1.96
