@@ -1,0 +1,24 @@
+77 Set-Location -Path C:\...
+  78 new-item -path Oddfolder type -itemtype directory
+  79 new-item -path oddfolder -itemtype directory
+  80 new-item -path evenfolder -itemtype directory
+  81 move-item -path file1 -destination oddfolder
+  82 set-location -path foldertest1
+  83 get-childitem
+  84 move-item -path file1 -destination c:\oddfolder
+  85  move-item -path file3 -destination c:\oddfolder
+  86 move-item -path file5 -destination c:\oddfolder
+  87 get-childitem
+  88 move-item -path file2 -destination c:\evenfolder
+  89 move-item -path file4 -destination c:\evenfolder
+  90 get-childitem
+  91 set-location -path c:\foldertest2
+  92 move-item -path file6 -destination c:\evenfolder
+  93 move-item -path file7 -destination c:\oddfolder
+  94 move-item -path file8 -destination c:\evenfolder
+  95 move-item -path file9 -destination c:\oddfolder
+  96 move-item -path file10 -destination c:\evenfolder
+  97 get-childitem
+  98 set-location -path c:\oddfolder
+  99 get-childitem
+ 100 get-childitem -path c:\evenfolder
