@@ -22,6 +22,3 @@
   98 set-location -path c:\oddfolder
   99 get-childitem
  100 get-childitem -path c:\evenfolder
-
-
-SUITE DE LA REPONSE : https://github.com/Fergoku/WCS_Quests/blob/main/Powershell2.1.md
