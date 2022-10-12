@@ -1,0 +1,11 @@
+nombreMaxBonbon <- 0
+  DEBUT algorithme nombre_Max_Bonbon (Nombre argent, Nombre prix)
+   SI argent> 0 et prix> 0
+    TANT QUE argent>= prix
+      nombreMaxBonbon <- nombreMaxBonbon + 1
+      argent <- argent - prix
+    FIN TANT QUE
+  SINON retourner "erreur"
+  FIN SI
+  RETOURNER nombreMaxBonbon
+  FIN algorithme nombre_Max_Bonbon
