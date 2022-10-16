@@ -1,0 +1,23 @@
+Créer une Unité d'Organisation :
+
+Depuis le gestionnaire de serveur
+Onglet Outils > choisir Utilisateurs et Ordinateurs Active directory
+Faire un clic droit sur le domaine "wilder.lan
+Cliquer sur "nouveau" puis "Unité d'organisation"
+Nommer cette UO "Wilders_students"
+
+
+Créer un groupe d’utilisateurs :
+
+Dans le dossier Wilders_students faire un clic droit puis « nouveau » > « groupe »
+Nommer le groupe utilisateur "Students"
+Cocher domaine local pour l'étendue du groupe
+
+Créer un utilisateur dans ce groupe :
+
+Sur le domaine « wilders.lan » faire un clic droit puis « nouveau » > « Utilisateur 
+Entrer les données de l’utilisateur : Nom, Prénom, Login etc ...
+
+Cliquer sur suivant
+Entrer le mot de passe du compte puis sélectionner les options souhaitées.
+Déplacer l’utilisateur dans le dossier « wilders.lan »
