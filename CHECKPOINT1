@@ -2,12 +2,12 @@
 2.	Un switch retransmet les signaux électriques, c’est un équipement de la couche 2 du modèle OSI et permet aux terminaux de communiquer entre eux en les identifiants par leurs adresses MAC qu’il stocke dans une table CAM.
 3.	Le matériel B (un routeur) permet aux équipements de communiquer en adressant les messages aux adresses IP de ces derniers, c’est un équipement de la couche 3 du modèle OSI.
 4.	E0, e1 et e2 entre autres représentent des ports Ethernet par lesquels sont connectées les machines au switch.
-5.	F0/0 sur le routeur indique le port par lequel il est connecté au switch en A.
+5.	F0/0 est l'adresse IP du port utilisé.
 6.	/16 est le CIDR représentant le masque de réseau, on peut le convertir en binaire ce qui donnerai 255.255.0.0
 7.	10.10.255.254/16 représente l’adresse IP du routeur et donc la gateway des machines sur le réseau 10.10.0.0/16
 8.	PC1 et PC2 sont des terminaux, aussi appelés machines hôtes.
-9.	A et B sont des périphériques de réseau.
-10.	Le trait rouge est un lien, il peut s’agir d’un câble RJ45 par exemple.
+9.	A est un switch, B est un routeur.
+10.	Le trait rouge est câble ethernet.
 11.	Calcul :
 
 Pour 10.10.4.1/16 (PC1) : 
@@ -41,14 +41,14 @@ Plage d’adresses dispo : 10.10.0.1/16 à 10.10.255.254/16
 15.	Pour dynamiser la configuration IP des machines on a besoin d’un serveur Dynamic Host Configuration Protocol (DHCP) que l’on peut ajouter au schéma après le routeur, en dehors du réseau.
 16.	Dans cette trame c’est 10.10.4.1 qui initialise la communication.
 17.	Cette communication a réussi entre 10.10.4.1 et 10.10.4.2.
-18.	Dans la trame, le request correspond à 10.10.4.2 et le reply à 10.10.4.1
+18.	Dans la trame, le request correspond à 10.10.4.1 et le reply à 10.10.4.2
 19.	Les matériels A et B, respectivement switch A et routeur B : Le rôle de A a été de répeter le signal émis par une machine pour connaitre l’identité (MAC address) de 10.10.4.2 et le routeur a répondu en se référant à sa table de routage.
 20.	Dans cette trame c’est 10.10.80.3 qui initialise la communication.
 21.	Cette communication a échoué car l’adresse de destination est 10.11.80.2, qui correspond à l’adresse IP d’une machine qui se trouve sur un autre réseau.
 22.	Le switch (A) a répété le signal au Routeur (B) qui a empêché la communication car il ne connait pas 10.11.80.2. C’est d’ailleurs lui qui répond aux lignes 2, 4, 6, 8 et 10, son adresse IP est 10.10.255.254, qui correspond à la gateway du réseau 10.10.0.0/16
-23.	Dans cette trame c’est le switch qui initialise la communication, il détient l’adresse MAC ca : 01 : da : d2 : 00 : 08
-24.	Cette communication a réussi entre le switch ca : 01 : da : d2 : 00 : 08 et le routeur.
-25.	Le switch (A) a identifié sur quel port se trouvait le routeur (B), le routeur a été inatteignable par le ping de 10.10.80.3
+23.	C'est le PC3 qui initialise la communication, 10.10.80.3
+24.	La communication a réussi entre le routeur et le PC3.
+25.	Le routeur joue le rôle de gateway et le switch de répéteur de signal.
 26.	Les différents protocoles encapsulés sont visibles dans la colonne « Protocol ». Sur cette trame on peut en distinguer 3 dans cette colonne : CDP, ARP et ICMP. On en voit aussi dans la colonne « Destination » de la première communication émise.
 
 SCRIPT :
