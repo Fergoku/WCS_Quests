@@ -54,6 +54,8 @@ Plage d’adresses dispo : 10.10.0.1/16 à 10.10.255.254/16
 SCRIPT :
 
 #!/bin/bash
-read -p "Vous devez rentrer successivement les informations suivantes : Nom du PC, adresse MAC adresse IP :" info
-cat configurationreseau.txt | grep $info
-
+echo "Vous devez rentrer successivement les informations suivantes : Nom du PC, adresse MAC adresse IP :"
+read pc macadd ipadd
+echo $pc $macadd $ipadd >> configurationreseau.txt
+echo -e "\nMerci d'avoir entré les informations suivantes :\nNom du PC : $pc\nAdresse MAC : $macadd\nAdresse IP : $ipadd"
+exit 0
